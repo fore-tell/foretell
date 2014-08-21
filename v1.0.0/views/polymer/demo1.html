@@ -1,0 +1,94 @@
+<div class="page page-polymer" ng-controller="PolymerDemoCtrl">
+    <div class="row">
+        <div class="col-md-12">
+
+            <div class="panel panel-default">
+                <div class="panel-body">
+
+                    <paper-input ng-model="multilineText" multiline="false"></paper-input>
+
+                    <br />
+                    <br />
+                    <paper-input ng-model="multilineText1" multiline="true"></paper-input>
+
+                    <br />
+                    <paper-slider ng-model="ctrl.numericValue" snaps="true"></paper-slider>
+                    <paper-radio-group ng-model="radio">
+                        <paper-radio-button name="one" label="One"></paper-radio-button>
+                        <paper-radio-button name="two" label="Two"></paper-radio-button>
+                        <paper-radio-button name="three" label="Three"></paper-radio-button>
+                    </paper-radio-group>
+                    <span>Selected: {{radio}}</span>
+
+                    <paper-slider ng-model="number" max="5"></paper-slider>
+
+                    <paper-tabs ng-model="number">
+                        <paper-tab>0</paper-tab>
+                        <paper-tab>1</paper-tab>
+                        <paper-tab>2</paper-tab>
+                        <paper-tab>3</paper-tab>
+                        <paper-tab>4</paper-tab>
+                        <paper-tab>5</paper-tab>
+                    </paper-tabs>
+
+                    <br />
+
+                    <paper-checkbox ng-model="boolean"></paper-checkbox>
+
+                    <br />
+                    <paper-toggle-button ng-model="boolean"></paper-toggle-button>
+                    <br />
+
+
+                    <paper-button label="Dialog" ng-click="dialog=true"></paper-button>
+                    <span>Dialog opened: {{dialog}}</span>
+                    <paper-dialog ng-opened="dialog" heading="Paper Dialog" layered>
+                    </paper-dialog>
+
+
+                    <br />
+
+                    <paper-button label="Toast" ng-click="toast=true"></paper-button>
+                    <span>Toast opened: {{toast}}</span>
+                    <paper-toast ng-opened="toast" text="This is a toast"></paper-toast>
+
+
+                    <br />
+
+                    <core-list ng-model="list" ng-tap="onSelect($event)">
+                        <template>
+                            <div>{{name}}</div>
+                            <br />
+                        </template>
+                    </core-list>
+
+                    <br />
+
+
+                    <core-dropdown ng-model="radioValue" ng-select="onSelect($event)">
+                        <core-item value="0" label="First"></core-item>
+                        <core-item value="1" label="Second"></core-item>
+                        <core-item value="2" label="Third"></core-item>
+                    </core-dropdown>
+
+
+                    <br />
+
+                    <br />
+
+                    <br />
+
+                    <br />
+
+                    <br />
+
+
+
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</div>

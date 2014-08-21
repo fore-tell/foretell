@@ -1,0 +1,188 @@
+
+<div class="page page-charts" data-ng-controller="morrisChartCtrl">
+
+    <div class="row">
+        <div class="col-md-4">
+            <section class="panel panel-default">
+                <div class="panel-body">
+                    <div morris-chart
+                         data-data="donut1.data"
+                         data-type="donut1.type"
+                         data-options="donut1.options"
+                         ></div>
+                </div>
+            </section>              
+        </div>
+        <div class="col-md-4">
+            <section class="panel panel-default">
+                <div class="panel-body">
+                    <div morris-chart
+                         data-data="donut2.data"
+                         data-type="donut2.type"
+                         data-options="donut2.options"
+                         ></div>
+                </div>
+            </section>
+        </div>
+        <div class="col-md-4">
+            <section class="panel panel-default">
+                <div class="panel-body">
+                    <div morris-chart
+                         data-data="donut3.data"
+                         data-type="donut3.type"
+                         data-options="donut3.options"
+                         ></div>
+                </div>
+            </section>            
+        </div>
+    </div>
+
+
+
+    </div>
+
+
+<div class="page page-dashboard" data-ng-controller="DashboardCtrl">
+
+
+
+            <div class="row">
+
+
+
+                <div class="col-xsm-6">
+                    <div class="panel mini-box">
+                        <span class="box-icon rounded bg-success">
+                            <i class="fa fa-group"></i>
+                        </span>
+                        <div class="box-info">
+                            <p class="size-h2">27 <span class="size-h4">%</span></p>
+                            <p class="text-muted"><span data-i18n="Growth"></span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xsm-6">
+                    <div class="panel mini-box">
+                        <span class="box-icon rounded bg-info">
+                            <i class="fa fa-users"></i>
+                        </span>
+                        <div class="box-info">
+                            <p class="size-h2">81</p>
+                            <p class="text-muted"><span data-i18n="New users"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xsm-6">
+                    <div class="panel mini-box">
+                        <span class="box-icon rounded bg-warning">
+                            <i class="fa fa-money"></i>
+                        </span>
+                        <div class="box-info">
+                            <p class="size-h2">177</p>
+                            <p class="text-muted"><span data-i18n="Profit"></span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xsm-6">
+                    <div class="panel mini-box">
+                        <span class="box-icon rounded bg-danger">
+                            <i class="fa fa-shopping-cart"></i>
+                        </span>
+                        <div class="box-info">
+                            <p class="size-h2">1172</p>
+                            <p class="text-muted"><span data-i18n="Sales"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+    <div class="panel panel-default">
+        <div class="panel-heading"><strong><span class="glyphicon glyphicon-th"></span> Area Chart</strong></div>
+        <div class="panel-body" data-ng-controller="flotChartCtrl">
+            <div data-flot-chart
+                 data-data="line1.data"
+                 data-options="line1.options"
+                 style="width: 100%; height: 300px;"
+                 ></div>
+        </div>
+    </div>
+
+
+    <div class="panel panel-default">
+        <div class="panel-heading"><strong><span class="glyphicon glyphicon-th"></span> Table - General</strong></div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Project</th>
+                    <th>Status</th>
+                    <th>Manager</th>
+                    <th>Progress</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><span class="color-success"><i class="fa fa-level-up"></i></span> UUSA</td>
+                    <td><span class="label label-info">Pending</span></td>
+                    <td>Amery Lee</td>
+                    <td><progressbar class="progressbar-xs no-margin" value="42"></progressbar>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><span class="color-success"><i class="fa fa-level-up"></i></span> UUS2</td>
+                    <td><span class="label label-primary">Due</span></td>
+                    <td>Romayne Carlyn</td>
+                    <td><progressbar class="progressbar-xs no-margin" value="61" type="success"></progressbar></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><span class="color-warning"><i class="fa fa-level-down"></i></span> KAU0</td>
+                    <td><span class="label label-success">Due</span></td>
+                    <td>Marybeth Joanna</td>
+                    <td><progressbar class="progressbar-xs no-margin" value="14" type="info"></progressbar></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><span class="color-info"><i class="fa fa-level-up"></i></span> SJUA</td>
+                    <td><span class="label label-danger">Blocked</span></td>
+                    <td>Jonah Benny</td>
+                    <td><progressbar class="progressbar-xs no-margin" value="65" type="warning"></progressbar></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><span class="color-danger"><i class="fa fa-level-down"></i></span> NCII</td>
+                    <td><span class="label label-warning">Suspended</span></td>
+                    <td>Daly Royle</td>
+                    <td><progressbar class="progressbar-xs no-margin" value="91" type="danger"></progressbar></td></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td><span class="color-info"><i class="fa fa-level-down"></i></span> ATQQ</td>
+                    <td><span class="label label-info">Suspended</span></td>
+                    <td>Jane Swift</td>
+                    <td><progressbar class="progressbar-xs no-margin" value="12" type="success"></progressbar></td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+<!--     <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Line and Area Chart</h3>
+        </div>
+        <div class="panel-body" data-ng-controller="morrisChartCtrl">
+            <div morris-chart
+                 data-data="combo1.data"
+                 data-type="combo1.type"
+                 data-options="combo1.options"
+                 ></div>
+        </div>
+    </div> -->
+
+</div>
+  
